@@ -48,5 +48,5 @@ app.post('/', async (req, res) => {
 app.listen(5000, () => console.log('AI server started on http://localhost:5000'))
 
 
-///hide
+/// https://chatamin.onrender.com/
    
