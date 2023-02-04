@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://chatamin.onrender.com/', {
+    const response = await fetch('https://chatamin.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -119,7 +119,7 @@ form.addEventListener('keyup', (e) => {
     }
 })
 
-
+/*
 document.addEventListener("contextmenu", (e) => {
   e.preventDefault();
  }, false);
@@ -130,3 +130,4 @@ document.addEventListener("contextmenu", (e) => {
    e.preventDefault();
   }
  });
+*/
