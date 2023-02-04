@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://chatamin.onrender.com', {
+    const response = await fetch('http://localhost:5000/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -118,16 +118,3 @@ form.addEventListener('keyup', (e) => {
         handleSubmit(e)
     }
 })
-
-/*
-document.addEventListener("contextmenu", (e) => {
-  e.preventDefault();
- }, false);
-
- document.addEventListener("keydown", (e) => {
-  if (e.ctrlKey || e.keyCode==123) {
-   e.stopPropagation();
-   e.preventDefault();
-  }
- });
-*/
