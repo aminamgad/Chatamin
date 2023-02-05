@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://chatamin-6raf.onrender.com', {
+    const response = await fetch('http://localhost:5000', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -108,7 +108,7 @@ const handleSubmit = async (e) => {
         const err = await response.text()
 
         messageDiv.innerHTML = "Something went wrong"
-        alert(err)
+        console.log(err);
     }
 }
 
